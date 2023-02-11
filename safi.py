@@ -104,5 +104,6 @@ def check(uid,f,l):
                 continue
         except(CError):
             time.sleep(10)
+            continue
     loop+=1
 menu()
