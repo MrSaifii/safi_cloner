@@ -24,6 +24,7 @@ def menu():
     file = input("file: ")
     for x in open(file,'r').readlines():
         idx.append(x.strip())
+    print(' version 409.0')
     print(47*'-')
     print('\t wait we are cracking ids .....')
     print(47*'-')
